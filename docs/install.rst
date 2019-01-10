@@ -21,7 +21,7 @@ If you need an OAuth2 provider you'll want to add the following to your urls.py
 
     urlpatterns = [
         ...
-        url(r'^o/', include('oauth2_provider.urls', namespace='oauth2_provider')),
+        path(r'o/', include('oauth2_provider.urls', namespace='oauth2_provider')),
     ]
 
 Sync your database
